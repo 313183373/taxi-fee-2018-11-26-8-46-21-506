@@ -1,4 +1,3 @@
-module.exports = function main() {
-    console.log("Debug Info");
-    return 'Hello World!';
+module.exports = function main(miles) {
+    return miles * 0.8;
 };
