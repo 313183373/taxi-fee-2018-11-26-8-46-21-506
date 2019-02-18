@@ -2,6 +2,10 @@ const main = require('../main/main');
 const assert = require('assert').strict;
 
 describe('taxi fee', function () {
+    it('should return 6 when miles is 2 and no waiting time', function () {
+        assert.deepEqual(main(2), 6);
+    });
+
     it('should return 8 when miles is 5 and no waiting time', function () {
         assert.deepEqual(main(5), 8);
     });
