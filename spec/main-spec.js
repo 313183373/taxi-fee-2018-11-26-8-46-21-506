@@ -25,4 +25,8 @@ describe('taxi fee', function () {
     it('should return 13 when miles is 10 and no waiting time', function () {
         assert.deepEqual(main(10), 13);
     });
+
+    it('should return 13 when miles is 10 and waiting time is 10', function () {
+        assert.deepEqual(main(10, 10), 16);
+    });
 });
